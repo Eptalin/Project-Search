@@ -2,8 +2,9 @@
 #### Video Demo:  <https://youtu.be/1D2gxG_H5yk](https://youtu.be/5DFCpBH-TWM>
 #### Description:
 This is a static website created to mimic the HTML layout and CSS styling of the Google search pages.
+It utilises both flexbox and grid elements to achieve its appearance, and it is all fully responsive. It mimics the Google layout across all display sizes.
 
-## Specifications:  
+## Requirements:  
 This project was created to meet the following specifications:
 - Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
   - On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
@@ -16,7 +17,6 @@ This project was created to meet the following specifications:
   - Find pages with… “any of these words:”
   - Find pages with… “none of these words:”
 - Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
-
   - Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text.
   - When the “Advanced Search” button is clicked, the user should be taken to the search results page for their given query.
 - Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
