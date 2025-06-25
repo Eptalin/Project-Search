@@ -3,7 +3,7 @@
 #### Description:
 This is a static website created to mimic the HTML layout and CSS styling of the Google search pages.
 
-**Specifications:**  
+## Specifications:  
 This project was created to meet the following specifications:
 - Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
   - On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
