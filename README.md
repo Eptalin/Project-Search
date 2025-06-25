@@ -1,5 +1,5 @@
 # Project: Search
-#### Video Demo:  <https://youtu.be/1D2gxG_H5yk](https://youtu.be/5DFCpBH-TWM>
+#### Video Demo:  <https://www.youtube.com/watch?v=5DFCpBH-TWM>
 #### Description:
 This is a static website created to mimic the HTML layout and CSS styling of the Google search pages.
 It utilises both flexbox and grid elements to achieve its appearance, and it is all fully responsive. It mimics the Google layout across all display sizes.
