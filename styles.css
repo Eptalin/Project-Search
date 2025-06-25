@@ -1,0 +1,325 @@
+/* Entire Page */
+    /* Remove margin, and set universal properties*/
+    * {
+        margin: 0;
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* HEADER */
+    /* Layout */
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 140px;
+        padding: 20px;
+    }
+
+
+    /* Navigation links */
+    a:link {
+        color: #1f1f1f;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #1f1f1f;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .mini-logo > p {
+        font-size: 24px;
+        display: inline;
+        letter-spacing: -4px;
+    }
+
+    .mini-logo:hover {
+        text-decoration: none;
+    }
+
+    .label {
+        display: flex;
+        margin: 25px 35px;
+        padding-left: 10px;
+    }
+
+    .line {
+        border-bottom: 1px solid rgb(215, 215, 215);
+        width: 100%;
+    }
+
+
+/* BODY */
+    /* Google logo */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 300px;
+    }
+
+    .logo > h1 {
+        text-align: center;
+        font-size: 80px;
+        display: inline;
+        letter-spacing: -4px;
+    }
+
+    .blue {
+        color: #4285F4;
+    }
+
+    .red {
+        color: #EA4335
+    }
+
+    .yellow {
+        color: #FBBC05;
+    }
+
+    .green {
+        color: #34A853;
+    }
+
+    .logo > p {
+        padding: 0px 0px 15px 5px;
+        font-size: 17px;
+    }
+
+
+    /* Search bar: rounded with hover/focus shadow */
+    .search div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-bar {
+        border: 1px solid rgb(215, 215, 215);
+        border-radius: 24px;
+        line-height: 22px;
+        padding: 11px 25px;
+        margin: 20px 20px 0px;
+        width: 100%;
+        max-width: 584px;
+        font-size: 16px;
+    }
+
+    .search-bar:hover {
+        box-shadow: 0 0 5px rgb(215, 215, 215);
+        border: 1px solid rgb(215, 215, 215);
+    }
+
+    .search-bar:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgb(215, 215, 215);
+        border: 1px solid rgb(215, 215, 215);
+    }
+
+    /* Buttons */    
+    .button {
+        background-color: #eef0f094;
+        color: #3c4043;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        margin: 30px 4px;
+        padding: 0px 16px;
+        line-height: 33px;
+    }
+
+    .button:hover {
+        border: 1px solid rgb(215, 215, 215);
+        box-shadow: 0 0 2 rgb(215, 215, 215);
+    }
+
+    #advanced-search-button {
+        background-color: #4285F4;
+        color: #ffffff;
+        margin: 0px;
+    }
+
+    .advanced-textbox {
+        border: 1px solid #d9d9d9;
+        border-radius: 1px;
+        height: 27px;
+        width: 99%;
+        box-sizing: border-box;
+        padding: 1px 8px;
+    }
+
+    .advanced-textbox:focus {
+        outline: 1px solid #4285F4;
+        box-shadow: inset 0 0 2px rgb(215, 215, 215);
+    }
+
+/* Advanced Search Grid Layout */
+    .advanced-search-form {
+        max-width: 1140px;
+        display: grid;
+        grid-template-columns: 175px 1fr 376px;
+        grid-auto-rows: 45px;
+        align-items: center;
+        grid-template-areas: 
+            'a1 . c1'
+            'a2 b2 c2'
+            'a3 b3 c3'
+            'a4 b4 c4'
+            'a5 b5 c5'
+            '. b6 .';
+        margin: 40px 0px 0px 45px;
+    }
+
+    /* Layout for medium-sized screens */
+    @media screen and (max-width: 1055px) {
+        .advanced-search-form {
+            grid-template-columns: 175px minmax(auto, 485px);
+            grid-template-areas: 
+                'a1 .'
+                'a2 b2'
+                'a3 b3'
+                'a4 b4'
+                'a5 b5'
+                '. b6';
+        }
+
+        .item-c1, .item-c2, .item-c3, .item-c4, .item-c5 {
+            display: none;
+        }
+
+        .advanced-textbox {
+            width: 100%;
+            max-width: 485px;
+            height: 25px;
+        }
+    }
+
+    /* Layout for small screens */
+    @media screen and (max-width: 450px) {
+        .advanced-search-form {
+            grid-auto-rows: 50px;
+            grid-template-areas: 
+                'a1'
+                'a2'
+                'b2'
+                'a3'
+                'b3'
+                'a4'
+                'b4'
+                'a5'
+                'b5'
+                'b6';
+        }
+    }
+
+    .item-a1 {
+        grid-area: a1;
+        font-size: 15px;
+    }
+
+    .item-c1 {
+        grid-area: c1;
+        font-weight: bold;
+        color: #707070;
+    }
+
+    .item-a2 {
+        grid-area: a2;
+    }
+
+    .item-b2 {
+        grid-area: b2;
+    }
+
+    .item-c2 {
+        grid-area: c2;
+    }
+
+    .item-a3 {
+        grid-area: a3;
+    }
+
+    .item-b3 {
+        grid-area: b3;
+    }
+
+    .item-c3 {
+        grid-area: c3;
+    }
+
+    .item-a4 {
+        grid-area: a4;
+    }
+
+    .item-b4 {
+        grid-area: b4;
+    }
+
+    .item-c4 {
+        grid-area: c4;
+    }
+
+    .item-a5 {
+        grid-area: a5;
+    }
+
+    .item-b5 {
+        grid-area: b5;
+    }
+
+    .item-c5 {
+        grid-area: c5;
+    }
+
+    .item-b6 {
+        grid-area: b6;
+        justify-self: end;
+    }
+
+    .item-c2, .item-c3, .item-c4, .item-c5 {
+        padding-left: 15px;
+        font-size: 11px;
+        color: #555;
+    }
+
+
+/* FOOTER */
+    footer {
+        margin-top: auto;
+        height: 50px;
+        padding: 0px 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: #f2f2f2;
+    }
+
+    footer > p {
+        background: none;
+    }
